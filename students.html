@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Students</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script type="module" src="js/students.js"></script>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <h1>StudentHub</h1>
+
+    <div class="header-controls">
+        <button type="button" id="theme-toggle" aria-pressed="false" hidden>Dark mode</button>
+        <button type="button" id="menu-toggle" aria-controls="main-navigation" aria-expanded="false" hidden>Menu</button>
+    </div>
+    <nav id="main-navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard-router.php">Dashboard</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="students.html" class="active">Students</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+
+<main class="events-main">
+
+    <section class="events-intro">
+        <div>
+            <span class="events-label">STUDENT DIRECTORY</span>
+            <h2>
+                Meet your<br>
+                <span>fellow students</span>
+            </h2>
+            <p>
+                Browse student profiles by name, department and CGPA.
+            </p>
+        </div>
+        <div class="events-mark">2026</div>
+    </section>
+
+    <section class="events-section" aria-labelledby="students-heading">
+
+        <div class="events-heading">
+            <div>
+                <span>DIRECTORY</span>
+                <h3 id="students-heading">Student Profiles</h3>
+            </div>
+            <p>Loaded from an external JSON file.</p>
+        </div>
+
+        <div class="events-controls">
+            <div class="control-group">
+                <label for="student-search">Search students</label>
+                <input type="search" id="student-search" placeholder="Search by name, department or email">
+            </div>
+
+            <div class="control-group">
+                <label for="student-department">Department</label>
+                <select id="student-department">
+                    <option value="all">All departments</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="student-sort">Sort by</label>
+                <select id="student-sort">
+                    <option value="name-asc">Name (A to Z)</option>
+                    <option value="name-desc">Name (Z to A)</option>
+                    <option value="cgpa-desc">CGPA (high to low)</option>
+                    <option value="cgpa-asc">CGPA (low to high)</option>
+                </select>
+            </div>
+        </div>
+
+        <p id="students-count" aria-live="polite"></p>
+        <p id="data-notice" class="data-notice" aria-live="polite"></p>
+
+        <div class="events-grid" id="students-container"></div>
+
+        <nav id="pagination" class="pagination" aria-label="Student pages"></nav>
+
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <h3>StudentHub</h3>
+            <p>Your digital campus companion.</p>
+        </div>
+        <div>
+            <p>
+                &copy; 2026 StudentHub Portal.
+                All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

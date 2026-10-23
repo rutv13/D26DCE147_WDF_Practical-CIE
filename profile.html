@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>StudentHub | Profile</title>
+
+<link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <h1>StudentHub</h1>
+
+    <div class="header-controls">
+        <button type="button" id="theme-toggle" aria-pressed="false" hidden>Dark mode</button>
+        <button type="button" id="menu-toggle" aria-controls="main-navigation" aria-expanded="false" hidden>Menu</button>
+    </div>
+    <nav id="main-navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.php">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="dashboard-router.php">Dashboard</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="profile.html" class="active">Profile</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="profile-main">
+
+    <!-- Profile Heading -->
+
+    <section class="profile-heading">
+
+        <div>
+            <span class="profile-label">STUDENT ACCOUNT</span>
+
+            <h2>
+                My <span>Profile</span>
+            </h2>
+
+            <p>
+                View and manage your basic student information.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Profile Layout -->
+
+    <div class="profile-layout">
+
+
+        <!-- ================= PROFILE CARD ================= -->
+
+        <section class="profile-card">
+
+            <div class="profile-top">
+
+                <img
+                    src="images/avatar-placeholder.png"
+                    alt="Student profile picture"
+                    class="profile-avatar"
+                >
+
+                <div>
+
+                    <h3>Rutv Lalani</h3>
+                    <p class="student-id">Student ID: D26DCE147</p>
+
+                    <p class="profile-role">
+                        Computer Engineering Student
+                    </p>
+
+                    <span class="profile-status">
+                        ● Active Student
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-divider"></div>
+
+
+            <div class="profile-details">
+
+                <div>
+                    <span>EMAIL</span>
+                    <strong>rutv@example.com</strong>
+                </div>
+
+                <div>
+                    <span>ROLE</span>
+                    <strong>Student</strong>
+                </div>
+
+                <div>
+                    <span>DEPARTMENT</span>
+                    <strong>Computer Engineering</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACADEMIC INFO ================= -->
+
+        <section class="profile-card academic-card">
+
+            <div class="card-heading">
+
+                <div>
+                    <span>ACADEMIC INFORMATION</span>
+
+                    <h3>Student Details</h3>
+                </div>
+
+                <span class="card-symbol">🎓</span>
+
+            </div>
+
+
+            <div class="academic-info">
+
+                <div class="info-box">
+                    <span>PROGRAM</span>
+                    <strong>B.Tech / Computer Engineering</strong>
+                </div>
+
+                <div class="info-box">
+                    <span>SEMESTER</span>
+                    <strong>Semester 5</strong>
+                </div>
+
+                <div class="info-box">
+                    <span>STUDENT ID</span>
+                    <strong>SH2026-001</strong>
+                </div>
+
+                <div class="info-box">
+                    <span>STATUS</span>
+                    <strong>Currently Enrolled</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- ================= EDIT PROFILE ================= -->
+
+    <section class="edit-profile-card">
+
+        <div class="edit-heading">
+
+            <div>
+                <span>PROFILE SETTINGS</span>
+
+                <h3>Update Information</h3>
+            </div>
+
+            <span class="edit-symbol">✎</span>
+
+        </div>
+
+
+        <form class="profile-form">
+
+            <div class="form-row">
+
+                <div>
+                    <label for="edit-name">Full Name</label>
+                    <input
+                        type="text"
+                        id="edit-name"
+                        name="edit-name"
+                        value="Rutv Lalani"
+                    >
+                </div>
+
+                <div>
+                    <label for="edit-email">Email Address</label>
+                    <input
+                        type="email"
+                        id="edit-email"
+                        name="edit-email"
+                        value="rutv@example.com"
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div>
+                    <label for="edit-course">Course</label>
+
+                    <input
+                        type="text"
+                        id="edit-course"
+                        name="edit-course"
+                        value="Computer Engineering"
+                    >
+                </div>
+
+                <div>
+                    <label for="edit-semester">Semester</label>
+
+                    <input
+                        type="text"
+                        id="edit-semester"
+                        name="edit-semester"
+                        value="Semester 5"
+                    >
+                </div>
+
+            </div>
+
+
+            <button type="submit" class="profile-save">
+                Save Changes
+            </button>
+
+        </form>
+
+    </section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>StudentHub</h3>
+
+            <p>
+                Your digital campus companion.
+            </p>
+        </div>
+
+        <div>
+            <p>
+                &copy; 2026 StudentHub Portal.
+                All rights reserved.
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>
