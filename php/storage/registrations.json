@@ -1,0 +1,26 @@
+[
+    {
+        "id": "reg_6ac5271731f9e9.39791906",
+        "fullname": "Darshil",
+        "email": "darshilrupani123@gmail.com",
+        "mobile": "6792523392",
+        "course": "btech-ce",
+        "year": "3",
+        "gender": "male",
+        "role": "student",
+        "password_set": true,
+        "registered": "2026-10-06T18:51:35+02:00"
+    },
+    {
+        "id": "reg_6ac52efca9e0f9.64592203",
+        "fullname": "Darshil",
+        "email": "Dipak@gmail.com",
+        "mobile": "6792523392",
+        "course": "btech-ce",
+        "year": "3",
+        "gender": "male",
+        "role": "student",
+        "password_set": true,
+        "registered": "2026-10-06T19:25:16+02:00"
+    }
+]
